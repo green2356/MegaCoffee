@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1.0">
+    <title>메가커피</title>
+    <link rel="shortcut icon" href="img/favi.png">      
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.js"></script>    
+    <script src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- 메인 페이지 -->
+    <div data-role="page" id="main" class="main">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu_yellow_hamburger.png" alt="메뉴 버튼"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slide" class="active">메인</a></li>
+                    <li><a href="#sub1" data-transition="slide">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slide">브랜드</a></li>
+                    <li><a href="#sub3" data-transition="slide">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 햄버거 버튼 메뉴 -->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close_yellow.png" alt="닫기">
+                    </a>
+                </div>
+                <div class="nav_logo">
+                    <a href="#"><img src="img/footer/logo.png" alt="로고"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">메인</a>
+                            <ul class="sub">
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">HOT COFFEE</a></li>
+                                <li><a href="#">ICE COFFEE</a></li>
+                                <li><a href="#">COLD BREW</a></li>
+                                <li><a href="#">ADE</a></li>
+                                <li><a href="#">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">성공포인트</a></li>
+                                <li><a href="#">가맹절차</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">인테리어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">SNS</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">건의함</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/sns/instagram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/sns/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="img/sns/youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div><!--nav 클래스 닫기-->
+        </div><!--header-->
+        <!-- 메인 페이지 컨텐츠 -->
+        <div data-role="content" class="content section">
+            <!-- Swiper -->
+            <div class="visual">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/slide1.png" alt="슬라이드1"></div>
+                        <div class="swiper-slide"><img src="img/slide3.png" alt="슬라이드2"></div>
+                        <div class="swiper-slide"><img src="img/slide2.png" alt="슬라이드3"></div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination .swiper-pagination-bullet2"></div>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="img/banner_main.png" alt="배너">
+            </div>
+            <div class="tab">
+                <div class="tab_title">
+                    <a href="#" class="t1 active">매장 찾기</a>
+                    <a href="#" class="t2">창업 문의</a>
+                </div>
+                <div class="tab_content" class="section">
+                    <div class="con1">
+                        <img src="img/tab/tab1.png" alt="매장찾기">
+                        <div class="con1_txt">
+                            
+                        </div>
+                        <div class="tab1_btn">
+                            <p>매장명 검색</p>
+                            <input type="text" class="box">
+                            <a href="#">
+                                검색
+                            </a>
+                        </div>
+                    </div>
+                    <div class="con2">
+                        <img src="img/tab/tab2.png" alt="창업문의">
+                        <div class="tab2_btn">
+                            <a href="#">
+                                창업 문의
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event">
+                <img src="img/event/event1.png" alt="이벤트">
+                <img src="img/event/event2.png" alt="이벤트">
+                <img src="img/event/event3.png" alt="이벤트">
+            </div>
+        </div><!--content-->
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/footer/logo.png" alt="로고">
+            </div>
+            <address>
+                서울특별시 마포구 월드컵북로4길 81 1층 (주) 앤하우스
+                Tel : 1588-0656 Fax : 02-325-5199
+                법인명 : 주식회사 앤하우스 대표자 : 김대영
+                사업자등록번호 : 105-87-51367
+            </address>
+            <p>COPYRIGHT(C) 2016 MEGA COFFEE ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#main"><img src="img/bottom_menu/main_yellow.png" alt="홈 아이콘"></a></li>
+                <li><a href="#sub1"><img src="img/bottom_menu/menu.png" alt="메뉴"></a></li>
+                <li><a href="#sub2"><img src="img/bottom_menu/brand.png" alt="브랜드"></a></li>
+                <li><a href="#sub3"><img src="img/bottom_menu/customer.png" alt="고객센터"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 첫번째 서브 페이지 -->
+    <div data-role="page" id="sub1" class="sub1">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu_yellow_hamburger.png" alt="메뉴 버튼"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slide">메인</a></li>
+                    <li><a href="#sub1" data-transition="slide" class="active">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slide">브랜드</a></li>
+                    <li><a href="#sub3" data-transition="slide">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 햄버거 버튼 메뉴 -->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close_yellow.png" alt="닫기">
+                    </a>
+                </div>
+                <div class="nav_logo">
+                    <a href="#"><img src="img/footer/logo.png" alt="로고"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">메인</a>
+                            <ul class="sub">
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">HOT COFFEE</a></li>
+                                <li><a href="#">ICE COFFEE</a></li>
+                                <li><a href="#">COLD BREW</a></li>
+                                <li><a href="#">ADE</a></li>
+                                <li><a href="#">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">성공포인트</a></li>
+                                <li><a href="#">가맹절차</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">인테리어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">SNS</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">건의함</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <li><a href="#"><img src="img/sns/instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="img/sns/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/sns/youtube.png" alt="youtube"></a></li>
+                </div>
+            </div><!--nav 클래스 닫기-->
+        </div><!--header-->
+        <div data-role="content" class="content section2">
+            <h1>COFFEE</h1>
+            <p class="t_hot">HOT</p>
+            <div class="swiper-container Swiper_sub_menu hot">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/menu/americano.png" alt="아메리카노">아메리카노</div>
+                    <div class="swiper-slide"><img src="img/menu/latte.png" alt="카페라떼">카페라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/caramel.png" alt="카라멜마끼아또">카라멜마끼아또</div>
+                    <div class="swiper-slide"><img src="img/menu/hot4.png" alt="민트">민트카페모카</div>
+                    <div class="swiper-slide"><img src="img/menu/hot5.png" alt="카페모카">카페모카</div>
+                    <div class="swiper-slide"><img src="img/menu/hot6.png" alt="티라미수">티라미수라떼</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <p>ICE</p>
+            <div class="swiper-container Swiper_sub_menu ice">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/menu/ice1.png" alt="아메리카노">아메리카노</div>
+                    <div class="swiper-slide"><img src="img/menu/ice2.png" alt="카페라떼">카페라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/ice3.png" alt="스윗서머">스윗 서머라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/ice4.png" alt="민트">민트카페모카</div>
+                    <div class="swiper-slide"><img src="img/menu/ice5.png" alt="큐브라떼">큐브라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/ice6.png" alt="티라미수">티라미수라떼</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <p class="t_cold">COLD BREW</p>
+            <div class="swiper-container Swiper_sub_menu cold">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/menu/cold1.png" alt="콜드브루 오리지널">콜드브루<br> 오리지널</div>
+                    <div class="swiper-slide"><img src="img/menu/cold2.png" alt="콜드브루 라떼">콜드브루<br> 라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/cold3.png" alt="콜드브루 아인슈페너">콜드브루<br> 아인슈페너</div>
+                    <div class="swiper-slide"><img src="img/menu/cold4.png" alt="콜드브루 오리지널">콜드브루<br> 오리지널</div>
+                    <div class="swiper-slide"><img src="img/menu/cold5.png" alt="콜드브루 라떼">콜드브루<br> 라떼</div>
+                    <div class="swiper-slide"><img src="img/menu/cold6.png" alt="콜드브루 아인슈페너">콜드브루<br> 아인슈페너</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <h1>DESSERT</h1>
+            <!-- <p class="t_dessert">DESSERT</p> -->
+            <div class="swiper-container Swiper_sub_menu cold">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/menu/dessert1.png" alt="퐁크러쉬 마카롱">퐁크러쉬<br> 마카롱</div>
+                    <div class="swiper-slide"><img src="img/menu/dessert2.png" alt="유니콘프라페 마카롱">유니콘 프라페 마카롱</div>
+                    <div class="swiper-slide"><img src="img/menu/dessert3.png" alt="쿠키프라페 마카롱">쿠키 프라페<br> 마카롱</div>
+                    <div class="swiper-slide"><img src="img/menu/dessert4.png" alt="치즈케익">치즈케익</div>
+                    <div class="swiper-slide"><img src="img/menu/dessert5.png" alt="초코무스케익">초코무스케익</div>
+                    <div class="swiper-slide"><img src="img/menu/dessert6.png" alt="딸기생크림 와플">딸기 생크림<br> 와플</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/footer/logo.png" alt="로고">
+            </div>
+            <address>
+                서울특별시 마포구 월드컵북로4길 81 1층 (주) 앤하우스<br>
+                Tel : 1588-0656 Fax : 02-325-5199<br>
+                법인명 : 주식회사 앤하우스 대표자 : 김대영<br>
+                사업자등록번호 : 105-87-51367
+            </address>
+            <p>COPYRIGHT(C) 2016 MEGA COFFEE ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#main"><img src="img/bottom_menu/main.png" alt="홈 아이콘"></a></li>
+                <li><a href="#sub1"><img src="img/bottom_menu/menu_yellow.png" alt="메뉴"></a></li>
+                <li><a href="#sub2"><img src="img/bottom_menu/brand.png" alt="브랜드"></a></li>
+                <li><a href="#sub3"><img src="img/bottom_menu/customer.png" alt="고객센터"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 두번째 서브 페이지 -->
+    <div data-role="page" id="sub2" class="sub2">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu_yellow_hamburger.png" alt="메뉴 버튼"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slide">메인</a></li>
+                    <li><a href="#sub1" data-transition="slide">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slide" class="active">브랜드</a></li>
+                    <li><a href="#sub3" data-transition="slide">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 햄버거 버튼 메뉴 -->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close_yellow.png" alt="닫기">
+                    </a>
+                </div>
+                <div class="nav_logo">
+                    <a href="#"><img src="img/footer/logo.png" alt="로고"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">메인</a>
+                            <ul class="sub">
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">HOT COFFEE</a></li>
+                                <li><a href="#">ICE COFFEE</a></li>
+                                <li><a href="#">COLD BREW</a></li>
+                                <li><a href="#">ADE</a></li>
+                                <li><a href="#">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">성공포인트</a></li>
+                                <li><a href="#">가맹절차</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">인테리어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">SNS</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">건의함</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <li><a href="#"><img src="img/sns/instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="img/sns/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/sns/youtube.png" alt="youtube"></a></li>
+                </div>
+            </div><!--nav 클래스 닫기-->
+        </div><!--header-->
+        <div data-role="content" class="content section3">
+            <div class="top_banner">
+                <img src="img/brand/top_banner.png" alt="메가커피">
+            </div>
+            <div class="ani">
+                <div class="ani1">
+                    <img src="img/brand/price.png" alt="싸다">
+                </div>
+                <div class="ani2">
+                    <img src="img/brand/big.png" alt="크다">
+                </div>
+                <div class="ani3">
+                    <img src="img/brand/taste.png" alt="맛있다">
+                </div>
+            </div>
+            <div class="brand_txt">
+                <h2>
+                BIG SIZE & 2 SHOW<br>
+                <span>대용량 24oz 사이즈</span><br>
+                신선한 원두를 사용한 맛있는<br>
+                커피로 다양하고 오감을<br>
+                만족시키는 BEVERAGE<br>
+                </h2>
+                <p><i>더 크고, 더 맛있다!</i><br>
+                    빅사이즈에 우수한 품질의 커피&음료를 합리적인<br>
+                    가격으로 제공하는 <span>MEGA MGC COFFEE</span> 입니다.<br>
+                    <br>
+                    더 큰 사이즈로 부담없이 여유롭게 다양하고<br>
+                    착한 음료를 제공합니다.</p>
+            </div>
+            <div class="mid_img">
+                <img src="img/brand/mid_banner.png" alt="중간배너">
+                <div class="mid_logo">
+                    <img src="img/logo.png" alt="로고">
+                </div>
+            </div>
+            <div class="brand_txt">
+                <h2>친구 같은 브랜드의<br>
+                    진정한 가치,<br>
+                    상생경영 이념 실현!</h2>
+                <p class="mind">
+                    <i>메가커피는 본사와 가맹점주가 상생할 수 있는<br>
+                    경영방침을 추구</i>하며 안정적이고 건강한 가맹점을<br>
+                    육성하여 오래도록 함께하는 것이 목표입니다.<br>
+                    <br>
+                    <br>
+                    메가커피가 고급 식자재를 고집하면서<br>
+                    낮은 판매단가를 유지할 수 있는 이유는,<br>
+                    <i>유통과정에서 발생되는 가맹본부의 수익을 최소화하고,<br>
+                    그 수익을 소비자와 가맹점주에게 제공하는 것에<br>
+                    그 이유가 있습니다.</i><br>
+                    <br>
+                    <br>
+                    본부가 바잉파워를 갖추어 경쟁력이 생길 경우,<br>
+                    그 인하폭만큼 가맹점주에게 제공하여<br>
+                    가맹점의 수익창출에 기여하는 등<br>
+                    가맹점과의 상생경영을 실천하고 있습니다.<br>
+                    <h3>
+                        편한 친구를 만나러 가는 길처럼<br>
+                        부담 없이 들를 수 있는 곳,<br>
+                        새롭고 트렌디한 음료가 언제나<br>
+                        나를 반겨주는 곳!<br>
+                        <br>
+                        메가커피가 사랑받는 이유입니다.
+                    </h3>
+                </p>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/footer/logo.png" alt="로고">
+            </div>
+            <address>
+                서울특별시 마포구 월드컵북로4길 81 1층 (주) 앤하우스<br>
+                Tel : 1588-0656 Fax : 02-325-5199<br>
+                법인명 : 주식회사 앤하우스 대표자 : 김대영<br>
+                사업자등록번호 : 105-87-51367
+            </address>
+            <p>COPYRIGHT(C) 2016 MEGA COFFEE ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#main"><img src="img/bottom_menu/main.png" alt="홈 아이콘"></a></li>
+                <li><a href="#sub1"><img src="img/bottom_menu/menu.png" alt="메뉴"></a></li>
+                <li><a href="#sub2"><img src="img/bottom_menu/brand_yellow.png" alt="브랜드"></a></li>
+                <li><a href="#sub3"><img src="img/bottom_menu/customer.png" alt="고객센터"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 세번째 서브 페이지 -->
+    <div data-role="page" id="sub3" class="sub3">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu_yellow_hamburger.png" alt="메뉴 버튼"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="slide">메인</a></li>
+                    <li><a href="#sub1" data-transition="slide">메뉴</a></li>
+                    <li><a href="#sub2" data-transition="slide">브랜드</a></li>
+                    <li><a href="#sub3" data-transition="slide" class="active">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 햄버거 버튼 메뉴 -->
+            <div class="nav">
+                <div class="close">
+                    <a href="#">
+                        <img src="img/close_yellow.png" alt="닫기">
+                    </a>
+                </div>
+                <div class="nav_logo">
+                    <a href="#"><img src="img/footer/logo.png" alt="로고"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">메인</a>
+                            <ul class="sub">
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">창업 문의</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">HOT COFFEE</a></li>
+                                <li><a href="#">ICE COFFEE</a></li>
+                                <li><a href="#">COLD BREW</a></li>
+                                <li><a href="#">ADE</a></li>
+                                <li><a href="#">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드</a>
+                            <ul class="sub">
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">성공포인트</a></li>
+                                <li><a href="#">가맹절차</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">인테리어</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">SNS</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">건의함</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <li><a href="#"><img src="img/sns/instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="img/sns/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/sns/youtube.png" alt="youtube"></a></li>
+                </div>
+            </div><!--nav 클래스 닫기-->
+        </div><!--header-->
+        <div data-role="content" class="content section4">
+            <h1>상품 문의</h1>
+            <div class="qna">
+                <iframe src="http://hshome2.dothome.co.kr/gb/bbs/board.php?bo_table=qa" frameborder="0" scrolling="yes"></iframe>
+            </div>
+
+        </div>
+        <div data-role="footer" class="footer">
+            <div class="f_logo">
+                <img src="img/footer/logo.png" alt="로고">
+            </div>
+            <address>
+                서울특별시 마포구 월드컵북로4길 81 1층 (주) 앤하우스<br>
+                Tel : 1588-0656 Fax : 02-325-5199<br>
+                법인명 : 주식회사 앤하우스 대표자 : 김대영<br>
+                사업자등록번호 : 105-87-51367
+            </address>
+            <p>COPYRIGHT(C) 2016 MEGA COFFEE ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="main_icon">
+            <ul>
+                <li><a href="#main"><img src="img/bottom_menu/main.png" alt="홈 아이콘"></a></li>
+                <li><a href="#sub1"><img src="img/bottom_menu/menu.png" alt="메뉴"></a></li>
+                <li><a href="#sub2"><img src="img/bottom_menu/brand.png" alt="브랜드"></a></li>
+                <li><a href="#sub3"><img src="img/bottom_menu/customer_yellow.png" alt="고객센터"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>       
