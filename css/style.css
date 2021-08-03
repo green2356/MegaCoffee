@@ -262,7 +262,7 @@ div { box-sizing: border-box; }
 /* footer */
 .footer {
     width: 100%;
-    height: 70.5vw;
+    height: 53vw;
     background-color: #fad000;
     padding: 5vw 0;
     text-align: center;
@@ -295,8 +295,8 @@ div { box-sizing: border-box; }
     font-size: 1vw;
     font-family: 'Pretendard-Thin';
     font-weight: bold;
+    margin-top: 2vw;
 }
-
 
 /* 맨 하단 고정 메뉴 */
 .main_icon {
@@ -480,7 +480,24 @@ div { box-sizing: border-box; }
 }
 
 
+.top {
+    font-size: 3vw;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    z-index: 9999;
+}
 
+.top a {
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #3b200f;
+    border-radius: 100%;
+    color: #fad000;
+}
 
 
 
