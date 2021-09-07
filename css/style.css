@@ -45,9 +45,11 @@ a { display: block; text-decoration: none; color: #3b200f; }
 h1 { color: #3b200f;}
 p { color: #3b200f; }
 img { width: 100%;}
-body { font-family: 'GmarketSansMedium'; }
-html, body { width: 100%; overflow-x: hidden; }
+body { font-family: 'GmarketSansMedium'; -ms-overflow-style: none; overflow: hidden;}
+::-webkit-scrollbar { display: none; }
+html, body { width: 100%;  }
 div { box-sizing: border-box; }
+
 
 /* main */
 .main, .header .sub1, .sub2, .sub3 { width: 100%; }
@@ -478,7 +480,6 @@ div { box-sizing: border-box; }
     width: 100%;
     height: 100vw;
 }
-
 
 .top {
     font-size: 3vw;
